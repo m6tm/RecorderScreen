@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Recorder</title>
+    <link rel="stylesheet" href="../assets/style/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <link rel="stylesheet" href="../assets/style/all.min.css">
+    <script src="../assets/script/bootstrap.bundle.min.js"></script>
+    <script src="../assets/script/all.min.js" async defer></script>
+    <script src="../assets/script/script.js" async defer></script>
+</head>
+<body class="overflow-hidden">
+    <header class="drag header">
+        <div class="task-barre">
+            <span class="window-title text-secondary">Screen Recorder Master ~ M6TM</span>
+        </div>
+        <div class="window-control-btn no-drag">
+            <button class="reduire" id="reduire">
+                <img src="../assets/image/icon/reduire.png" alt="">
+            </button>
+            <button class="agrandire" id="agrandire">
+                <img src="../assets/image/icon/agrandir.png" alt="">
+            </button>
+            <button class="fermer" id="close">
+                <img src="../assets/image/icon/fermer.png" alt="">
+            </button>
+        </div>
+    </header>
+    <div class="body-container">
+        <div class="row w-100 h-100 p-0 m-0">
+            <div class="col-6 h-100 left-side">
+                <div class="w-100">
+                    <section class="record-controller d-flex justify-content-between align-items-center mx-auto mt-5">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button class="play-pause pe-none" id="pause-play-recording">
+                                <i class="fa fa-play"></i>
+                            </button>
+                            <button class="play-pause pe-none" id="stop-recording">
+                                <i class="fa fa-stop"></i>
+                            </button>
+                            <button class="play-pause pe-none" id="mute-recording">
+                                <i class="fa fa-microphone"></i>
+                            </button>
+                        </div>
+                        <div class="timer-controller text-muted">
+                            <span id="timer-hour">00</span>
+                            <span>:</span>
+                            <span id="timer-minute">00</span>
+                            <span>:</span>
+                            <span id="timer-second">00</span>
+                        </div>
+                    </section>
+                    <section class="record-controller-btn d-flex justify-content-between align-items-center mx-auto mt-3">
+                        <button class="start info" id="start-recording">Start recording</button>
+                        <button class="save success" id="save-recording">Save</button>
+                    </section>
+                    <section class="record-controller-btn d-flex justify-content-center align-items-center mx-auto mt-3">
+                        <button class="btn btn-sm text-light primary rounded-3" id="change-recording">Choose / Change screen</button>
+                    </section>
+                </div>
+                <div class="w-100">
+                    <div class="screen-view mx-auto d-flex justify-content-center align-items-center">
+                        <h5 class="text-muted">Screen stream real time</h5>
+                        <video src="" id="video-stream"></video>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 h-100 rigth-side">
+                <div class="separator"></div>
+                <div class="w-100">
+                    <ul class="social-network">
+                        <li>
+                            <a href="javascript: void(0)"><img src="../assets/image/icon/facebook.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0)"><img src="../assets/image/icon/google.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0)"><img src="../assets/image/icon/github-alt.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-100">
+                    <img src="../assets/image/humaaans-sitting-4.png" class="girl" alt="">
+                    <img src="../assets/image/humaaans-standing-2.png" class="boy" alt="">
+                    <img src="../assets/image/Symbols.png" class="watch" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer w-100 d-flex justify-content-end align-items-center pe-4">
+        <small class="text-muted">Powered by Maboa Daniel Emmanuel alias M~6TM</small>
+    </footer>
+</body>
+</html>
